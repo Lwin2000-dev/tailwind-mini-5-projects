@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login Modal</title>
+    
+  <link rel="stylesheet" href="/assets/style-927f8cfe.css">
+</head>
+<body>
+<!--Global Container-->
+<div class="flex items-center justify-center min-h-screen bg-rose-50">
+<!--Card Container-->
+    <div class="relative flex flex-col m-6 space-y-10 bg-white shadow-2xl rounded-2xl
+                md:flex-row md:space-y-0 md:m-0">
+<!--        Left Side Container-->
+        <div class="p-6 md:p-20">
+<!--            Top Content-->
+            <h2 class="font-mono font-bold text-4xl mb-5">Log In</h2>
+            <p class="max-w-sm mb-12 font-sans font-light text-gray-600">
+                Log in to your account to download pictures, videos and music.
+            </p>
+            <input type="text"
+                   class="w-full p-6 border border-gray-300 rounded-md
+                   focus:outline-none
+                   placeholder:font-light placeholder:font-sans" placeholder="Enter Your Email Address">
+<!--            Middle Content-->
+            <div class="flex flex-col items-center justify-between mt-6 space-y-6
+                        md:flex-row md:space-y-0">
+                <div class="font-normal font-sans text-cyan-700">Forgot Password</div>
+                <button class="w-full md:w-auto flex justify-center items-center p-6 space-x-4
+                                font-sans font-bold text-white rounded-md shadow-sm px-9 bg-cyan-700
+                                shadow-cyan-100 hover:bg-opacity-90 hover:shadow-lg
+                                border transition hover:-translate-y-0.5 duration-150">
+                    <span class="">Next</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-7" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <line x1="13" y1="18" x2="19" y2="12"></line>
+                        <line x1="13" y1="6" x2="19" y2="12"></line>
+                    </svg>
+                </button>
+            </div>
+<!--            Border -->
+            <div class="mt-12 border-b border-b-gray-300"></div>
+<!--            Bottom Content-->
+            <p class="py-6 text-sm text-gray-400 text-center font-thin">
+                or Log in with
+            </p>
+<!--            Botton Button Container-->
+            <div class="flex flex-col space-y-6 md:flex-row md:space-x-4 md:space-y-0">
+                <button class="flex items-center justify-center space-x-3 py-2
+                                border border-gray-300 rounded shadow-sm
+                                hover:bg-opacity-30 hover:shadow-lg hover:-translate-y-0.5
+                                duration-200 transition md:w-1/2">
+                    <img src="data:image/png;base64,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" alt="" class="w-9">
+                    <span class="font-thin">Facebook</span>
+                </button>
+                <button class="flex items-center justify-center space-x-3 py-2
+                                border border-gray-300 rounded shadow-sm
+                                hover:bg-opacity-30 hover:shadow-lg hover:-translate-y-0.5
+                                duration-200 transition md:w-1/2">
+                    <img src="data:image/png;base64,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" alt="" class="w-9">
+                    <span class="font-thin">Google</span>
+                </button>
+            </div>
+        </div>
+
+<!--        Right Side Container-->
+        <img src="/assets/image_login-5af36b8e.jpg" alt="" class="w-[430px] hidden md:block">
+<!--        Close Button-->
+        <div class="absolute -top-5 right-4 group md:top-4 md:bg-white
+                    hover:cursor-pointer hover:-translate-y-0.5 transition duration-150
+                    flex items-center justify-center w-10 h-10 bg-gray-200 rounded-full">
+            <svg xmlns="http://www.w3.org/2000/svg"
+                 class="w-6 h-6 text-black group-hover:text-gray-600"
+                 viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
+                 stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+        </div>
+    </div>
+</div>
+</body>
+</html>
